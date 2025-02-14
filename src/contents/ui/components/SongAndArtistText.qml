@@ -37,7 +37,7 @@ ColumnLayout {
         font: root.textFont
         speed: root.scrollingSpeed
         maxWidth: root.maxWidth
-        text: root.splitSongAndArtists ? root.artists : [root.artists, root.title].filter((x) => x).join(" - ")
+        text: root.splitSongAndArtists ? root.artists : root.title
         scrollingEnabled: root.scrollingEnabled
         scrollResetOnPause: root.scrollingResetOnPause
         visible: text.length !== 0
